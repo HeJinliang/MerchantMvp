@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/moren_theme_color_light</item>
+    </style>
+
+    <!--Application主题-->
+    <style name="ApplicationTheme" parent="AppTheme">
+    </style>
+
+    <!--首页主题-->
+    <style name="HomeTheme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+        <!--app进出场动画-->
+        <item name="android:windowAnimationStyle">@style/fadeMain</item>
+    </style>
+
+    <!--闪屏界面的主题-->
+    <style name="GuideTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--全屏-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--默认背景颜色-->
+        <item name="android:windowBackground">@color/moren_bg</item>
+    </style>
+
+
+    <!--普通界面满屏的主题-->
+    <style name="NormalTeme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <!--默认背景颜色-->
+        <item name="android:windowBackground">@color/white</item>
+        <!--app进出场动画-->
+        <item name="android:windowAnimationStyle">@style/fade</item>
+    </style>
+
+
+    <!--普通activity的进场、出场动画-->
+    <style name="fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_out</item>
+    </style>
+
+    <!--首页activity的进场、出场动画-->
+    <style name="fadeMain" parent="@android:style/Animation.Activity">
+        <!--<item name="android:activityOpenEnterAnimation">@anim/activity_in</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/activity_out</item>-->
+        <item name="android:activityCloseEnterAnimation">@anim/activity_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_out</item>
+    </style>
+
+    <!-- 自定义dialog主题 -->
+    <style name="CustomDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/CustomDialogAnimation</item>
+    </style>
+
+    <!--透明弹窗的主题-->
+    <style name="defaultDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <!-- CustiomDialog进出动画 -->
+    <style name="CustomDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/custom_dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/custom_dialog_exit_anim</item>
+    </style>
+
+</resources>

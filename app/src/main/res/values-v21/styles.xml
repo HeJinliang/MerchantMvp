@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--Application主题-->
+    <style name="ApplicationTheme" parent="AppTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!--闪屏界面的主题-->
+    <style name="GuideTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--全屏-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--默认背景颜色-->
+        <item name="android:windowBackground">@color/moren_bg</item>
+    </style>
+
+
+
+    <!--登录的主题-->
+    <style name="AppBaseThemeLogin" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!--5.0+的状态栏颜色处理-->
+        <!--<item name="colorPrimaryDark">@color/white</item>-->
+
+        <!--默认背景颜色-->
+        <item name="android:windowBackground">@color/moren_bg</item>
+        <item name="android:windowAnimationStyle">@style/fadeMain</item>
+    </style>
+
+    <!--首页主题-->
+    <style name="HomeTheme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!--默认背景颜色-->
+        <item name="android:windowBackground">@color/white</item>
+        <!--app进出场动画-->
+        <item name="android:windowAnimationStyle">@style/fadeMain</item>
+    </style>
+
+    <!--普通界面的主题-->
+    <style name="NormalTeme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!--默认背景颜色-->
+        <item name="android:windowBackground">@color/white</item>
+        <!--app进出场动画-->
+        <item name="android:windowAnimationStyle">@style/fade</item>
+    </style>
+
+
+
+</resources>

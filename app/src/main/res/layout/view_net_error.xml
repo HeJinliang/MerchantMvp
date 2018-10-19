@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_net_error"
+    android:gravity="center"
+    android:visibility="visible"
+    android:background="@color/white"
+    >
+
+
+
+    <ImageView
+        android:layout_width="279dp"
+        android:layout_height="163dp"
+        android:src="@mipmap/no_wangluo_bg"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="网络不给力，请稍后重试"
+        android:textSize="15sp"
+        android:textColor="@color/moren_tv"
+        android:layout_marginTop="33dp"
+        />
+
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
+        android:background="@drawable/selector_all_whole_2"
+        android:textColor="@color/white"
+        android:text="刷新"
+        android:textSize="16sp"
+        android:layout_marginTop="53dp"
+        />
+
+</LinearLayout>

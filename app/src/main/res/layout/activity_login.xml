@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textSize="30sp"
+        android:layout_marginTop="82dp"
+        android:layout_marginStart="23dp"
+        android:textColor="@color/moren_tv"
+        />
+
+
+    <com.i3020.mvpdemo01.ui.widget.WooxEditText
+        android:id="@+id/et_user_input"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/login_cha"
+        android:background="@color/transparent"
+        android:hint="请输入手机号"
+        android:textColor="@color/moren_tv"
+        android:textColorHint="@color/color_c8c8c8"
+        android:textCursorDrawable="@drawable/shape_edit_cursor_moren"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:paddingEnd="10dp"
+        android:paddingBottom="13dp"
+        android:layout_marginTop="60dp"
+        android:inputType="number"
+        android:maxLength="11"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/moren_line"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        >
+        <com.i3020.mvpdemo01.ui.widget.WooxEditText
+            android:id="@+id/et_psw_input"
+            android:layout_width="0px"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:drawableRight="@mipmap/login_cha"
+            android:background="@color/transparent"
+            android:hint="请输入密码"
+            android:textColor="@color/moren_tv"
+            android:textColorHint="@color/color_c8c8c8"
+            android:textCursorDrawable="@drawable/shape_edit_cursor_moren"
+            android:inputType="textPassword"
+            android:paddingEnd="10dp"
+            android:paddingBottom="13dp"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:imeOptions="actionGo"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_show_psw"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/login_yanjing2"
+            android:scaleType="fitCenter"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/moren_line"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/selector_all_whole_5"
+        android:text="登录"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="60dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册账号"
+            android:textSize="15sp"
+            android:textColor="@color/moren_theme_color_light"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingEnd="7dp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tv_forget_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？"
+            android:textSize="15sp"
+            android:textColor="@color/color_999999"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingStart="7dp"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/iRoom"
+    >
+
+    <CheckBox
+        android:id="@+id/cb_bg"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/selector_single_check"
+        android:button="@null"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="西溪印象城"
+        android:textSize="15sp"
+        android:textColor="@color/moren_tv"
+        android:layout_marginLeft="13dp"
+        android:layout_gravity="center_vertical"
+        />
+
+</LinearLayout>
